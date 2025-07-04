@@ -22,15 +22,19 @@ python bot.py
 
 ✅ Jalankan VIA systemd agar bot otomatis berjalan saar server restart
 ```bash
+sudo nano /etc/systemd/system/telegraminfo.service
+```
+
+```bash
 [Unit]
-Description=Telegram Bot VPS
+Description=Telegram Bot Info
 After=network.target
 
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/root/BOT-Telegram-Akses-VPS
-ExecStart=/root/BOT-Telegram-Akses-VPS/venv/bin/python bot.py
+WorkingDirectory=/root/info_status_bot
+ExecStart=/root/info_status_bot/venv/bin/python bot.py
 Restart=on-failure
 
 [Install]
@@ -40,19 +44,19 @@ Reload systemd & aktifkan service:
 ```bash
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
-sudo systemctl enable telegrambot
-sudo systemctl start telegrambot
+sudo systemctl enable telegraminfo
+sudo systemctl start telegraminfo
 ```
 
 Cek Status
 ```bash
-sudo systemctl status telegrambot
+sudo systemctl status telegraminfo
 ```
 Cek Running
 ```bash
-journalctl -u telegrambot -f
+journalctl -u telegraminfo -f
 ```
 Restart BOT
 ```bash
-sudo systemctl restart telegrambot
+sudo systemctl restart telegraminfo
 ```
