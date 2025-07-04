@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -s https://raw.githubusercontent.com/choir94/Airdropguide/refs/heads/main/logo.sh | bash
+curl -s https://raw.githubusercontent.com/winzzy12/airdropguide/main/logo.sh | bash
 sleep 5
 
 echo "==================="
