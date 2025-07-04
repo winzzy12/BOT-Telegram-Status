@@ -10,7 +10,7 @@ git clone https://github.com/winzzy12/BOT-Telegram-Status.git
 ```
 Buat Screen
 ```bash
-Screen -S send-info-bot
+screen -S send-info-bot
 ```
 ```bash
 cd BOT-Telegram-Status
