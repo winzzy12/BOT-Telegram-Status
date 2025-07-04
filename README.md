@@ -19,3 +19,40 @@ source venv/bin/activate
 python bot.py
 ```
 4. Done
+
+✅ Jalankan VIA systemd agar bot otomatis berjalan saar server restart
+```bash
+[Unit]
+Description=Telegram Bot VPS
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/BOT-Telegram-Akses-VPS
+ExecStart=/root/BOT-Telegram-Akses-VPS/venv/bin/python bot.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+Reload systemd & aktifkan service:
+```bash
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable telegrambot
+sudo systemctl start telegrambot
+```
+
+Cek Status
+```bash
+sudo systemctl status telegrambot
+```
+Cek Running
+```bash
+journalctl -u telegrambot -f
+```
+Restart BOT
+```bash
+sudo systemctl restart telegrambot
+```
