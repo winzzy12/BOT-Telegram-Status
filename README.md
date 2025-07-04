@@ -6,7 +6,7 @@
 
 Download Script auto install
 ```bash
-Git Clone https://github.com/winzzy12/BOT-Telegram-Status.git
+git clone https://github.com/winzzy12/BOT-Telegram-Status.git
 ```
 Buat Screen
 ```bash
