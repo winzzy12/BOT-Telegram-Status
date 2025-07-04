@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "=============================================="
+echo "   🛠  WINZZY 🚀   "
+echo "=============================================="
+echo ""
 
 # Nama folder project
 PROJECT_DIR="info_status_bot"
