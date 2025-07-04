@@ -12,6 +12,9 @@ Buat Screen
 ```bash
 Screen -S send-info-bot
 ```
+```bash
+cd BOT-Telegram-Status
+```
 Jalankan Script .sh
 ```bash
 chmod +x install_bot.sh
