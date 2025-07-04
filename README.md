@@ -22,6 +22,11 @@ python bot.py
 
 ✅ Jalankan VIA systemd agar bot otomatis berjalan saar server restart
 ```bash
+screen -r send-info-bot
+```
+CTRL + C (Untuk menghentikan BOT VIA screen) kemudain exit
+
+```bash
 sudo nano /etc/systemd/system/telegraminfo.service
 ```
 
