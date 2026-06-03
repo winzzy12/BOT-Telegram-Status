@@ -269,3 +269,15 @@ if __name__ == "__main__":
     app.run_polling()
 EOF
 ```
+Cek Python yang digunakan
+```bash
+which python3
+python3 --version
+```
+
+Install requests:
+```bash
+pip3 install requests
+```
+
+
